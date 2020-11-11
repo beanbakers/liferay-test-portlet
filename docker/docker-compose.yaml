@@ -1,0 +1,12 @@
+version: "2.2"
+services:
+    liferay-dev:
+        image: liferay/portal:7.3.5-ga6
+        ports:
+            - 8080:8080
+            - 8000:8000
+        volumes:
+            - ./deploy:/mnt/liferay/deploy
+            - ./scripts:/mnt/liferay/scripts
+            - ./configs:/mnt/liferay/configs
+            - ./files:/mnt/liferay/files
