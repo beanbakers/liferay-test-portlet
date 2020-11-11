@@ -1,0 +1,10 @@
+*                      text=auto
+# Command line scripts that need specific line endings
+*.sh                    text eol=lf
+*.bash                  text eol=lf
+*.bat                   text eol=crlf
+*.cmd                   text eol=crlf
+# RC files (like .eslintrc)
+*.*rc             		text
+# Ignore files (like .npmignore)
+*.*ignore         		text
